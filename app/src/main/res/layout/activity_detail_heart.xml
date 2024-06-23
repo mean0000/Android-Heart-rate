@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="1920px"
+        android:layout_height="1080px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/background_heart" />
+
+
+    <ImageView
+        android:id="@+id/content_view_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/content_view_heart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+    <ImageView
+        android:id="@+id/status_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/content_view_high"
+        app:layout_constraintStart_toStartOf="@+id/content_view_heart"
+        app:layout_constraintEnd_toEndOf="@+id/content_view_heart"
+        app:layout_constraintTop_toTopOf="@+id/content_view_heart"
+        app:layout_constraintLeft_toLeftOf="@+id/content_view_heart"
+        app:layout_constraintRight_toRightOf="@+id/content_view_heart"
+        app:layout_constraintBottom_toBottomOf="@+id/content_view_heart"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.87"/>
+
+    <TextView
+        android:id="@+id/value_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="150px"
+        app:layout_constraintBottom_toBottomOf="@+id/content_view_heart"
+        app:layout_constraintEnd_toEndOf="@+id/content_view_heart"
+        app:layout_constraintStart_toStartOf="@+id/content_view_heart"
+        app:layout_constraintTop_toTopOf="@+id/content_view_heart" />
+
+
+    <ImageButton
+        android:id="@+id/Btn_heart_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/content_btn_result"
+        app:layout_constraintStart_toStartOf="@+id/content_view_heart"
+        app:layout_constraintEnd_toEndOf="@+id/content_view_heart"
+        app:layout_constraintTop_toTopOf="@+id/content_view_heart"
+        app:layout_constraintLeft_toLeftOf="@+id/content_view_heart"
+        app:layout_constraintRight_toRightOf="@+id/content_view_heart"
+        app:layout_constraintBottom_toBottomOf="@+id/content_view_heart"
+        app:layout_constraintVertical_bias="0.94"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+
+    <ImageView
+        android:id="@+id/ex_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ex_heart_high"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.84"/>
+
+    <ImageButton
+        android:id="@+id/Btn_home_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="0dp"
+        android:src="@drawable/btn_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
